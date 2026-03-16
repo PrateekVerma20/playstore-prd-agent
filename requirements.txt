@@ -1,0 +1,6 @@
+crewai
+crewai[tools]
+google-genai
+google-play-scraper
+pandas
+python-dotenv
