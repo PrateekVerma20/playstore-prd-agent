@@ -34,3 +34,42 @@ python -m venv venv
 
 # Activate it (Mac/Linux)
 source venv/bin/activate
+
+## 📦 3. Install Dependencies
+Install the core AI framework (CrewAI), the Google GenAI SDK, and the NLP tools required for sentiment processing.
+```bash
+# Install all required libraries
+pip install -r requirements.txt
+
+# Download the NLP data for TextBlob sentiment analysis
+python -m textblob.download_corpora lite
+
+## ⚙️ 4. Configuration
+This project uses a `.env` file to manage sensitive credentials. This ensures your **Paid Gemini API Key** is never hardcoded or uploaded to GitHub.
+
+1. Create a file named `.env` in the root folder.
+2. Add your key exactly like this:
+```env
+GOOGLE_API_KEY=your_actual_gemini_api_key_here
+
+---
+
+## 🤖 Example Agent Output (The PRD)
+
+When the **Senior PM Agent** processes the "Crux" data, it generates a structured Product Requirements Document. Below is a sample of the intelligence the agent provides:
+
+> ### **I. Executive Summary**
+> Based on the analysis of 10,000+ reviews, the primary mission is to restore **Transaction Trust**. While the UI/UX is rated 5-stars, the "Financial Loop" (refunds and stuck payments) is currently a 1-star experience for 15% of power users.
+>
+> ### **II. Critical Pain Points (The "Crux")**
+> * **Stuck Transactions:** Users reporting high-value payments (₹40,000+) pending for 5-7 days.
+> * **Support Friction:** Automated AI bots are preventing users from reaching human agents for critical financial failures.
+> * **Ecommerce Reliability:** One-month shipping delays on the CRED Store without proactive status updates.
+>
+> ### **III. Feature Requirements**
+> * **"Human-in-the-Loop" Escalation:** An automated trigger to connect a user to a live agent if a transaction >₹5,000 stays in "Processing" for >2 hours.
+> * **Merchant Escrow System:** Release funds to Store vendors only upon verified delivery to reduce refund "Black Holes."
+>
+> ### **IV. Success Metrics (KPIs)**
+> * **Refund TTR (Time to Resolve):** Aiming for < 24 hours.
+> * **User Retention:** Target 15% reduction in "App Uninstalled" mentions related to stuck payments.
