@@ -34,8 +34,8 @@ python -m venv venv
 
 # Activate it (Mac/Linux)
 source venv/bin/activate
-
-## 📦 3. Install Dependencies
+**
+### 📦 3. Install Dependencies**
 Install the core AI framework (CrewAI), the Google GenAI SDK, and the NLP tools required for sentiment processing.
 ```bash
 # Install all required libraries
