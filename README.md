@@ -20,3 +20,17 @@ Unlike simple wrappers, this project uses a multi-stage pipeline:
    ```bash
    git clone [https://github.com/your-username/playstore-prd-agent.git](https://github.com/your-username/playstore-prd-agent.git)
    cd playstore-prd-agent
+
+## 🛠️ Setup & Installation
+
+### 2. Set up Virtual Environment
+Isolate your project dependencies to avoid conflicts.
+```powershell
+# Create the environment
+python -m venv venv
+
+# Activate it (Windows)
+.\venv\Scripts\activate
+
+# Activate it (Mac/Linux)
+source venv/bin/activate
