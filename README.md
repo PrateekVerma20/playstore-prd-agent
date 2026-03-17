@@ -35,6 +35,8 @@ python -m venv venv
 # Activate it (Mac/Linux)
 source venv/bin/activate
 **
+```
+
 ### 📦 3. Install Dependencies**
 Install the core AI framework (CrewAI), the Google GenAI SDK, and the NLP tools required for sentiment processing.
 ```bash
@@ -43,7 +45,7 @@ pip install -r requirements.txt
 
 # Download the NLP data for TextBlob sentiment analysis
 python -m textblob.download_corpora lite
-
+```
 ## ⚙️ 4. Configuration
 This project uses a `.env` file to manage sensitive credentials. This ensures your **Paid Gemini API Key** is never hardcoded or uploaded to GitHub.
 
@@ -53,7 +55,7 @@ This project uses a `.env` file to manage sensitive credentials. This ensures yo
 GOOGLE_API_KEY=your_actual_gemini_api_key_here
 
 ---
-
+```
 ## 🤖 Example Agent Output (The PRD)
 
 When the **Senior PM Agent** processes the "Crux" data, it generates a structured Product Requirements Document. Below is a sample of the intelligence the agent provides:
